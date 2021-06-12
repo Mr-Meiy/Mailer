@@ -13,8 +13,7 @@ const path = require("path");
 const PDFDocument = require("pdfkit");
 const dotenv = require("dotenv");
 dotenv.config({ path: "./config/config.env" });
-let port=http.createServer(sendSMSHandler);
-// let port = process.env.PORT || 6000;
+let port = process.env.PORT || 80||6000;
 
 app.get("/", (req, res) => {
     res.status(200).send('App Started');
